@@ -46,6 +46,9 @@ public class twoSumAllPairsDistinct {
         // Write your solution here
     }
 
+    //time: O(n)
+    //space： O(n)
+
     public static void main(String[] args) {
         int[] array = new int[]{2, 1, 3, 2, 4, 3, 4, 2};
         allPairs(array, 6);
