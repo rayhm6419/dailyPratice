@@ -21,7 +21,7 @@ step 2: maintain a HashMap, Key: the value of the number, value: the List of the
 step 3: return the list of list of Integer with index
 * */
 public class twoSumAllPairs {
-    public List<List<Integer>> twoSumAllParisOfIndex(int[] array, int target) {
+    public static List<List<Integer>> twoSumAllParisOfIndex(int[] array, int target) {
         //coner case
         if (array == null || array.length == 0) {
             return null;
@@ -40,11 +40,18 @@ public class twoSumAllPairs {
             }
             //if not contain, need to put the value to the map
             if (!map.containsKey(array[i])) {
+                //the current value with new array
                 map.put(array[i], new ArrayList<Integer>());
             }
+            //get the Key and add the index to accurate list
             map.get(array[i]).add(i);
         }
         return res;
+    }
+
+    public static void main(String[] args) {
+        int[] array = new int[]{1,3,2,4};
+        twoSumAllParisOfIndex(array,5);
     }
 }
 
