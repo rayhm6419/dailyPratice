@@ -50,4 +50,11 @@ public class maxPathSum {
         //最后返回是一条直上直下的
         return Math.max(left, right) + root.val;
     }
+
+    public static void main(String[] args) {
+      treeNode root = new treeNode(5);
+
+      root.left = new treeNode(1);
+
+    }
 }
