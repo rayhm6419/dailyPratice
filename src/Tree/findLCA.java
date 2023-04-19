@@ -17,3 +17,6 @@ public class findLCA {
         return left == null ? right : left;
     }
 }
+
+//what is the time and space complexity of this algorithm?
+//a: time complexity is O(n) and space complexity is O(n)
